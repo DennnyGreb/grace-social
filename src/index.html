@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Волонтерський Центр Церкви Благодать</title>
+    <!-- <link rel="icon" href=""> -->
+    <link rel="stylesheet" type="text/css" href="css/home/home.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+    <body>
+      <header class="header">
+        <a href="/"><img src="img/church_logo.svg" alt="logo" class="logo"></a>
+        <!-- <ul class="menu">
+          <a href="/">
+            <li class="menu__item {% if url_name == 'home' %}active{% endif %}">Головна</li>
+          </a>
+          <a href="{{about_url}}">
+            <li class="menu__item {% if url_name == 'about' %}active{% endif %}">Про нас</li>
+          </a>
+          <a href="{{activities_url}}">
+            <li class="menu__item {% if url_name == 'activities' %}active{% endif %}">Активності</li>
+          </a>
+          <a href="{{bible_study_url}}">
+            <li class="menu__item {% if url_name == 'bible-study' %}active{% endif %}">Вивчення Біблії</li>
+          </a>
+        </ul> -->
+        <!-- <div id="menu-burger" class="menu-burger"><span></span></div>
+        <div class="menu-modal" id="menu-modal">
+          <ul class="menu-container">
+            <a href="/">
+              <li class="menu__item {% if url_name == 'home' %}active{% endif %}">Головна</li>
+            </a>
+            <a href="{{about_url}}">
+              <li class="menu__item {% if url_name == 'about' %}active{% endif %}">Про нас</li>
+            </a>
+            <a href="{{activities_url}}">
+              <li class="menu__item {% if url_name == 'activities' %}active{% endif %}">Активності</li>
+            </a>
+            <a href="{{bible_study_url}}">
+              <li class="menu__item {% if url_name == 'bible-study' %}active{% endif %}">Вивчення Біблії</li>
+            </a>
+          </ul>
+        </div> -->
+      </header>
+      <!-- Top baner section -->
+      <section class="top-banner-section">
+        <div class="top-banner">
+            <div class="overlay"></div>
+            <div class="wrapper">
+                <div class="banner-container">
+                    <h1 class="banner-container__header">Церква Благодать</h1>
+                    <p class="banner-container__description">
+                        Ми - спільнота людей, де вірять, люблять та приймають. Тут ви можете дізнатись про Ісуса Христа. Він є надією, яка змінила нас та увесь світ.
+                    </p>
+                    <div class="buttons-container">
+                        <a href="https://www.youtube.com/c/%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%B0%D0%91%D0%BB%D0%B0%D0%B3%D0%BE%D0%B4%D0%B0%D1%82%D1%8C%D0%A0%D1%96%D0%B2%D0%BD%D0%B5/featured"
+                            class="button banner-container__stream" target="_blank">
+                            Трансляція
+                        </a>
+                        <a href="https://www.youtube.com/c/%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%B0%D0%91%D0%BB%D0%B0%D0%B3%D0%BE%D0%B4%D0%B0%D1%82%D1%8C%D0%A0%D1%96%D0%B2%D0%BD%D0%B5/featured"
+                            class="button button--secondary banner-container__preaches" target="_blank">
+                            Записи Проповідей
+                        </a>
+                    </div>
+                </div>
+                <div class="where where--desktop">
+                    <p class="where__address">м. Рівне, Майдан Просвіти, 2</p>
+                    <p class="where__time">Щонеділі, 11:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="where where--mobile">
+            <p class="where__address">м. Рівне, Майдан Просвіти, 2</p>
+            <p class="where__time">Щонеділі, 11:00</p>
+        </div>
+      </section>
+
+
+      <!-- Activities section -->
+      <section class="main-container activities-section">
+        <h2 class="activities-section__heading">Наші Активності</h2>
+        <div class="activities-section__container">
+            <div class="activities-section__img-container">
+                <h1 class="activities-section__text">Для дітей</h1>
+                <div class="activities-section__img activities-section__img--child"></div>
+            </div>
+            <div class="activities-section__img-container">
+                <h1 class="activities-section__text">Молодь&nbsp;та підлітки</h1>
+                <div class="activities-section__img activities-section__img--youth"></div>
+            </div>
+            <div class="activities-section__img-container">
+                <h1 class="activities-section__text">Сім'ї</h1>
+                <div class="activities-section__img activities-section__img--family"></div>
+            </div>
+        </div>
+      </section>
+
+      <!-- study -->
+      <section class="study">
+        <div class="main-container">
+            <div class="study__inner">
+                <div class="study__content">
+                    <h1 class="study__content-title title">
+                        Вивчення Біблії
+                    </h1>
+
+                    <p class="study__content-text text">
+                        Знати Бога - це знати Його Слово. Тому однією із цінностей Церкви є постійне дослідження Біблії. В ній відкривається Божий задум для всього людства, особистість Бога і радісна звістка про спасіння від гріхів, дана нам Богом.
+                        <br><br>
+                        Кожен може краще зрозуміти Біблію у наших домашніх групах. Там можна обговорити різні думки зі Слова, більше зрозуміти про Бога і просто поспілкуватись на життєві теми.
+                        <br><br>
+                        Ми будемо раді, якщо ви також приєднаєтесь до нас!
+                    </p>
+
+                    <a class="study__btn button" href="#">
+                        Домашні групи
+                    </a>
+                </div>
+
+                <div class="study__img-box">
+                    <img class="study__img study__img--small" src="img/study__small.jpg" alt="">
+                    <img class="study__img study__img--middle" src="img/study__middle.jpg" alt="">
+                    <img class="study__img study__img--high" src="img/study__high.jpg" alt="">
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Need help section -->
+      <section class="help">
+        <div class="main-container">
+            <div class="help__inner">
+                <h2 class="help__title title">Потребуєш допомоги?</h2>
+                <p class="help__text">
+                    До нас можна звернутись, якщо ви зіткнулись у житті з розпачем, страхом, залежностями чи пошуком відповідей на складні запитання. 
+                    Ми готові допомогти і підтримати, тож почувайтесь вільно, щоб запитати про поміч.
+                </p>
+                <div class="help__phone">
+                    <p class="number">Телефонуйте за номером:
+                        <a class="phone" href='tel:068 760 36 55'>068 760 36 55</a>
+                    </p>
+                </div>
+                <div class="help__form">
+                    <p class="help__form-text">Або залиште дані, а ми з вами зв’яжемось</p>
+                    <form class="form" action="#">
+                        <div class="help__input-group">
+                            <input class="form__item form__name-person" placeholder="Ім'я" type="text" name="name-person">
+                            <input class="form__item form__number" placeholder="Номер телефону" type="text" name="number">
+                        </div>
+                        <button class="form__btn button" type="submit">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- coming soon -->
+      <section class="coming">
+        <div class="main-container">
+            <h1 class="coming__title">
+                Найближчі заходи
+            </h1>
+            <div class="coming__items coming__items--desktop">
+                <div class="coming__item">
+                    <img class="coming__item-img" src="img/coming-soon.jpg" alt="">
+                    <ul class="coming__item-list">
+                        <li class="coming__item-info">
+                            Грудень 12, 2021
+                        </li>
+
+                        <li class="coming__item-info">
+                            18:30, Мазепи, 4А
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="coming__item">
+                    <img class="coming__item-img" src="img/coming-soon.jpg" alt="">
+                    <ul class="coming__item-list">
+                        <li class="coming__item-info">
+                            Грудень 12, 2021
+                        </li>
+
+                        <li class="coming__item-info">
+                            18:30, Мазепи, 4А
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="coming__item">
+                    <img class="coming__item-img" src="img/coming-soon.jpg" alt="">
+                    <ul class="coming__item-list">
+                        <li class="coming__item-info">
+                            Грудень 12, 2021
+                        </li>
+                        <li class="coming__item-info">
+                            18:30, Мазепи, 4А
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="coming__item">
+                    <img class="coming__item-img" src="img/coming-soon.jpg" alt="">
+                    <ul class="coming__item-list">
+                        <li class="coming__item-info">
+                            Грудень 12, 2021
+                        </li>
+
+                        <li class="coming__item-info">
+                            18:30, Мазепи, 4А
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="coming__item">
+                    <img class="coming__item-img" src="img/coming-soon.jpg" alt="">
+                    <ul class="coming__item-list">
+                        <li class="coming__item-info">
+                            Грудень 12, 2021
+                        </li>
+
+                        <li class="coming__item-info">
+                            18:30, Мазепи, 4А
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="coming__items coming__items--mobile">
+                <div class="coming__slider">
+                    <div>
+                        <div class="coming__item">
+                            <img class="coming__item-img" src="img/coming-soon.jpg" alt="">
+                            <ul class="coming__item-list">
+                                <li class="coming__item-info">
+                                    Грудень 12, 2021
+                                </li>
+                                <li class="coming__item-info">
+                                    18:30, Мазепи, 4А
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="coming__item">
+                            <img class="coming__item-img" src="img/coming-soon.jpg" alt="">
+                            <ul class="coming__item-list">
+                                <li class="coming__item-info">
+                                    Грудень 12, 2021
+                                </li>
+
+                                <li class="coming__item-info">
+                                    18:30, Мазепи, 4А
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="coming__item">
+                            <img class="coming__item-img" src="img/coming-soon.jpg" alt="">
+                            <ul class="coming__item-list">
+                                <li class="coming__item-info">
+                                    Грудень 12, 2021
+                                </li>
+
+                                <li class="coming__item-info">
+                                    18:30, Мазепи, 4А
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="coming__item">
+                            <img class="coming__item-img" src="img/coming-soon.jpg" alt="">
+                            <ul class="coming__item-list">
+                                <li class="coming__item-info">
+                                    Грудень 12, 2021
+                                </li>
+
+                                <li class="coming__item-info">
+                                    18:30, Мазепи, 4А
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="button button--secondary coming__btn coming__btn--desktop" href="#">
+                Всі заходи
+            </a>
+        </div>
+      </section>
+      <footer class="footer">
+        <!-- <ul class="footer-menu">
+          <a href="/"><li class="footer-menu__item">Головна</li></a>
+          <a href="{{about_url}}"><li class="footer-menu__item">Про нас</li></a>
+          <a href="{{activities_url}}"><li class="footer-menu__item">Активності</li></a>
+          <a href="{{bible_study_url}}"><li class="footer-menu__item">Вивчення Біблії</li></a>
+        </ul> -->
+        <div class="social">
+          <a href="/" class="social__item social__item--youtube"><img src="img/youtube2.svg" alt="youtube"></a>
+          <a href="/" class="social__item social__item--mail"><img src="img/mail2.svg" alt="mail"></a>
+          <a href="/" class="social__item social__item--instagram"><img src="img/inst2.svg" alt="instagram"></a>
+          <a href="/" class="social__item social__item--facebook"><img src="img/facebook2.svg" alt="facebook"></a>
+        </div>
+        <div class="copyright-container">
+          <img class="copyright-container__logo" src="img/white_logo.svg" alt="white-logo">
+          <p class="copyright-container__text">© 2022 Grace Church. All rights reserved. Privacy Policy | Terms of Use</p>
+        </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>s
+      <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
