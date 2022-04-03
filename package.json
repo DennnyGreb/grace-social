@@ -1,0 +1,15 @@
+{
+  "name": "grace-social",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "styles": "node-sass -o dist/css scss",
+    "styles:watch": "node-sass -o dist/css scss --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

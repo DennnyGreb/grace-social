@@ -1,0 +1,41 @@
+
+/* Colors */
+$base-black: #202426;
+$dark-black: #323232;
+$base-white: #FFFFFF;
+$base-gray: #677074;
+$dark-gray: #636363;
+$base-white: #FFFFFF;
+$base-gray: #808080;
+$milky-white: #F2F2F0;
+$gray-light: #F3F3F3;
+$background-gray: #E5E5E5;
+
+$normal-orange: #F27F3D;
+$saturated-orange: #F2541B;
+$pitch-orange: #F26D3D;
+
+$base-blue: #104B89;
+
+$overlay-color: rgba(32, 36, 38, 0.6);
+
+
+/* Fonts */
+$Open_Sans_Regular: 'Open Sans Regular', Arial, sans-serif;
+$Open_Sans_Light: 'Open Sans Light', Arial, sans-serif;
+$Open_Sans_Bold: 'Open Sans Bold', Arial, sans-serif;
+$Open_Sans_Semibold: 'Open Sans Semibold', Arial, sans-serif;
+$Open_Sans_Italic: 'Open Sans Italic', Arial, sans-serif;
+
+$Montserrat_Regular: 'Montserrat Regular', Arial, sans-serif;
+$Montserrat_Light: 'Montserrat Light', Arial, sans-serif;
+$Montserrat_Bold: 'Montserrat Bold', Arial, sans-serif;
+$Montserrat_Semibold: 'Montserrat Semibold', Arial, sans-serif;
+$Montserrat_Italic: 'Montserrat Italic', Arial, sans-serif;
+
+// Breakpoints
+$bp-sm: 568px; // @media (min-width: $bp-sm)
+$bp-md: 768px; // @media (min-width: $bp-md)
+$bp-lg: 1024px; // @media (min-width: $bp-lg)
+$bp-pre-xl: 1215px; // @media (min-width: $bp-pre-xl)
+$bp-xl: 1344px; // @media (min-width: $bp-xl)
