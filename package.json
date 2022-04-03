@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "styles": "node-sass -o dist/css scss",
-    "styles:watch": "node-sass -o dist/css scss --watch"
+    "styles": "node-sass -o src/css scss",
+    "styles:watch": "node-sass -o src/css scss --watch"
   },
   "author": "",
   "license": "ISC",

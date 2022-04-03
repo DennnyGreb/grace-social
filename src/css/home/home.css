@@ -1070,12 +1070,10 @@ body {
       .where__address::before, .where__time::before {
         top: 0.6rem; } }
 
-.where__address {
-  margin-bottom: 1.2rem; }
-  .where__address::before {
-    width: 1.1rem;
-    height: 1.4rem;
-    background-image: url(../../img/location.svg); }
+.where__address::before {
+  width: 1.1rem;
+  height: 1.4rem;
+  background-image: url(../../img/location.svg); }
 
 .where__time::before {
   width: 1.3rem;
