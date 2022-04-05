@@ -6,6 +6,26 @@
 './_coming-soon.scss';
 
 
+.languages {
+  display: flex;
+  flex-direction: row;
+  &__ua {
+    margin-right: 2rem;
+  }
+  
+  &__ua,
+  &__us {
+    cursor: pointer;
+    img {
+      width: 3.4rem;
+
+      @media (min-width: $bp-md) {
+        width: 4.4rem;
+      }
+    }
+  }
+}
+
 // Top banner section
 .top-banner-section {
   border-bottom: 0.1rem solid $background-gray;
@@ -620,5 +640,15 @@
     @media (min-width: $bp-lg) {
       font-size: 2.4rem;
     }
+  }
+}
+
+.map {
+  height: 32rem;
+
+  .popup__address {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-family: $Montserrat_Regular;
   }
 }

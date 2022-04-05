@@ -903,6 +903,19 @@ body {
       .coming__btn {
         margin-bottom: 2.8rem; } }
 
+.languages {
+  display: flex;
+  flex-direction: row; }
+  .languages__ua {
+    margin-right: 2rem; }
+  .languages__ua, .languages__us {
+    cursor: pointer; }
+    .languages__ua img, .languages__us img {
+      width: 3.4rem; }
+      @media (min-width: 768px) {
+        .languages__ua img, .languages__us img {
+          width: 4.4rem; } }
+
 .top-banner-section {
   border-bottom: 0.1rem solid #E5E5E5; }
   @media (min-width: 1024px) {
@@ -1377,3 +1390,10 @@ body {
     @media (min-width: 1024px) {
       .phone__number {
         font-size: 2.4rem; } }
+
+.map {
+  height: 32rem; }
+  .map .popup__address {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-family: "Montserrat Regular", Arial, sans-serif; }

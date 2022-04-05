@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Волонтерський Центр Церкви Благодать</title>
+    <!-- <link rel="icon" href=""> -->
+    <link rel="stylesheet" type="text/css" href="css/home/home.css"/>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+</head>
+    <body>
+      <header class="header">
+        <a href="/"><img src="img/church_logo.svg" alt="logo" class="logo"></a>
+        <div class="languages">
+          <div class="languages__ua"><a href="/index.html"><img src="img/ukraine.png" alt="ukraine"></a></div>
+          <div class="languages__us"><a href="/eng.html"><img src="img/united-states.png" alt="ukraine"></a></div>
+        </div>
+      </header>
+      <!-- Top baner section -->
+      <section class="top-banner-section">
+        <div class="top-banner">
+            <div class="overlay"></div>
+            <div class="wrapper">
+                <div class="banner-container">
+                    <h1 class="banner-container__header">Grace Church Volunteer Center</h1>
+                    <p class="banner-container__description">
+                        We are the community of people who believe, love and accept. Here you can get help at this difficult time for our people.
+                    </p>
+                    <div class="buttons-container">
+                        <a class="button banner-container__stream" href='tel:0800 335 314'>Call us</a>
+                        <div class="banner-container__number">0800 335 314</div>
+                    </div>
+                </div>
+                <div class="where where--desktop">
+                    <p class="where__address">Rivne city, Mazepy 4a St</p>
+                </div>
+            </div>
+        </div>
+        <div class="where where--mobile">
+            <p class="where__address">Rivne city, Mazepy 4a St</p>
+        </div>
+      </section>
+
+        <!-- Need help section -->
+        <section class="help">
+            <div class="main-container">
+                <div class="help__inner">
+                    <h2 class="help__title title">Need help?</h2>
+                    <p class="help__text">
+                      You can contact us if you don't have enough food, medicine or roof over your head. We are eager to support you, so feel free to ask for help.
+                    </p>
+                    <div class="approaches__items">
+                        <div class="approaches__row">
+                            <div class="approaches__item">
+                                <h3 class="approaches__item-text">
+                                    Food
+                                </h3>
+                                <p class="approaches__item-text">
+                                    Medicine
+                                </p>
+                                <p class="approaches__item-text">
+                                    Clothes
+                                </p>
+                                <img class="approaches__item-icon" src="img/groceries.png" alt="">
+                            </div>
+            
+                            <div class="approaches__item">
+                                <h3 class="approaches__item-text">
+                                    Free evacuation to Poland
+                                </h3>
+                                <img class="approaches__item-icon" src="img/bus.png" alt="">
+                            </div>
+                            <div class="approaches__item approaches__item--single">
+                                <h3 class="approaches__item-text">
+                                    Spiritual support
+                                </h3>
+                                <img class="approaches__item-icon" src="img/soul.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="phone">
+                <p class="phone__text">Hotline:
+                    <a class="phone__number" href='tel:0800 335 314'>0800 335 314</a>
+                </p>
+            </div>
+        </section>
+      <div class="map" id="map"></div>
+      <footer class="footer">
+        <div class="social">
+          <a href="/" class="social__item social__item--youtube"><img src="img/youtube2.svg" alt="youtube"></a>
+          <a href="/" class="social__item social__item--mail"><img src="img/mail2.svg" alt="mail"></a>
+          <a href="/" class="social__item social__item--instagram"><img src="img/inst2.svg" alt="instagram"></a>
+          <a href="/" class="social__item social__item--facebook"><img src="img/facebook2.svg" alt="facebook"></a>
+        </div>
+        <div class="copyright-container">
+          <img class="copyright-container__logo" src="img/white_logo.svg" alt="white-logo">
+          <p class="copyright-container__text">© 2022 Grace Church. All rights reserved. Privacy Policy | Terms of Use</p>
+        </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+      <script>
+          var map = L.map('map').setView([50.622080, 26.247920], 13);
+          L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1,
+            accessToken: 'pk.eyJ1IjoiZGVubnlncmViIiwiYSI6ImNrOXpqM3AyNTAyeGczZW42NTdhczl4bmQifQ.AARYAUjZGhzw24hxGAM7PQ'
+          }).addTo(map);
+          var marker = L.marker([50.622080, 26.247920]).addTo(map);
+          marker.bindPopup("<p class='popup__address'>Rivne city, Mazepy 4a St<p>").openPopup();
+      </script>
+      <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
