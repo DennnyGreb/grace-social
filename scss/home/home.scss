@@ -425,6 +425,7 @@
 
     @media (min-width: $bp-md) {
       padding: 5rem 0;
+      padding-bottom: 1rem;
     }
   }
 
@@ -559,6 +560,7 @@
 
         &--single {
           margin-right: 0;
+          margin-bottom: 0;
 
           &:nth-child(odd) {
             margin-right: 0;
@@ -567,6 +569,7 @@
           @media (min-width: $bp-sm) {
             margin-right: 5rem;
             margin-left: 5rem;
+            margin-bottom: 2rem;
 
             &:nth-child(odd) {
               margin-right: 5rem;
@@ -576,6 +579,7 @@
           @media (min-width: $bp-md) {
             margin-right: 0;
             margin-left: 0;
+            margin-bottom: 3rem;
 
             &:nth-child(odd) {
               margin-right: 0;
@@ -601,14 +605,10 @@
 }
 
 .phone {
-  padding: 2rem 0;
   text-align: center;
-  border-top: 0.2rem solid $base-black;
+  border-bottom: 0.2rem solid $base-black;
   width: 100%;
-
-  @media (min-width: $bp-md) {
-    padding: 3rem 0;
-  }
+  margin-bottom: 2.4rem;
 
   &__text {
     font-family: $Montserrat_Semibold;
@@ -617,6 +617,11 @@
     line-height: 3.218rem;
     color: $base-black;
     display: inline-block;
+    padding: 3rem;
+    border: 0.2rem solid $dark-black;
+    border-bottom: none;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 
     @media (min-width: $bp-lg) {
       font-size: 2.2rem;
@@ -641,6 +646,156 @@
     @media (min-width: $bp-lg) {
       font-size: 2.4rem;
     }
+  }
+}
+
+.ministers {
+  padding-bottom: 3.2rem;
+  background-color: $base-white;
+
+  @media (min-width: $bp-md) {
+    padding-bottom: 3.6rem;
+  }
+
+  @media (min-width: $bp-lg) {
+    padding-bottom: 4.8rem;
+    padding-top: 1rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    padding-bottom: 5.4rem;
+  }
+
+  &__sub-title,
+  &__item-title {
+      font-family: $Montserrat_Bold;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      color: $dark-black;
+  }
+
+  &__title {
+    margin-bottom: 2.2rem;
+  }
+
+  &__items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+
+      @media (min-width: $bp-md) {
+          flex-wrap: wrap;
+          flex-direction: row;
+          align-items: unset;
+          justify-content: space-around;
+          max-width: 72rem;
+      }
+      @media (min-width: $bp-lg) {
+          max-width: 98rem;
+          justify-content: space-around;
+      }
+
+      @media (min-width: $bp-xl) {
+          max-width: 100%;
+      }
+  }
+
+  &__item {
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+      border-radius: 1rem;
+      width: 29rem;
+      margin-bottom: 3rem;
+      background: $base-white;
+
+      @media (min-width: $bp-sm) {
+          max-width: 35rem;
+          width: 100%;
+      }
+      
+      @media (min-width: $bp-md) {
+          display: flex;
+          height: 35rem;
+          flex-direction: column;
+          margin-bottom: 2rem;
+
+          &:nth-child(odd) {
+              margin-right: 2rem;
+          }
+      }
+
+      @media (min-width: $bp-lg) {
+          width: 30rem;
+          height: 36rem;
+          max-width: none;
+
+          &:nth-child(odd) {
+            margin-right: 0;
+          }
+      }
+
+      @media (min-width: $bp-xl) {
+        width: 32rem;
+      }
+  }
+
+  &__item-img {
+    width: 100%;
+    height: 24rem;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+  }
+
+  &__item-title {
+    margin-bottom: 0.1rem;
+
+    @media (min-width: $bp-sm) {
+        line-height: 2.8rem;
+    }
+    @media (min-width: $bp-md) {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    @media (min-width: $bp-lg) {
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+    }
+    @media (min-width: $bp-xl) {
+        font-size: 2.4rem;
+        line-height: 3.5rem;
+    }
+  }
+
+  &__item-text {
+    font-family: $Montserrat_Semibold;
+    color: $dark-black;
+  }
+
+  &__item-content {
+      padding: 0 2.2rem;
+      padding-top: 1.6rem;
+      padding-bottom: 1.2rem;
+      height: 100%;
+  }
+  
+  &-item__sub-title {
+      font-family: $Montserrat_Bold;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+      color: $base-gray;
+      margin-bottom: 1rem;
+
+      @media (min-width: $bp-sm) {
+          font-size: 1.3rem;
+      }
+      @media (min-width: $bp-md) {
+          font-size: 1.4rem;
+          line-height: 1.6rem;
+      }
+      @media (min-width: $bp-lg) {
+          font-size: 1.6rem;
+          line-height: 1.9rem;
+      }
   }
 }
 
